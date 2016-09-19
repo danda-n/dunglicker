@@ -1,0 +1,199 @@
+body {
+    background-image: url(../image/new_bg.png);
+    font-family: "Century Gothic";
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameMonsterImg:active {
+    padding: 3px;
+}
+
+#game_window {
+    height: 100vh;
+    border: 10vh solid transparent;
+    border-image: url(../image/border_v2.png) 30% round;
+    /*    border-left: 4px solid #BA0B0B;
+        border-right: 4px solid #BA0B0B;*/
+}
+
+#game_options {
+    display: inline-block;
+    width: 100vh;
+}
+
+#game_inventory > thead {
+    border: 3px solid #2B6D12;
+}
+
+#game_stats {
+    color: #C7C7C7;
+}
+
+#game_stats > tbody > tr > td:nth-child(3){
+    text-align: center;
+}
+
+#btnGameDamage, #btnGameAttackSpeed, #btnGameCriticalHitChance, #btnGameCriticalHitDamage, #btnGameEnergy, #btnGameEnergyRegen, #spell1, #spell2, #spell3, #spell6, #spell7, #spell8, #spellUpgrade1, #spellUpgrade2, #spellUpgrade3, #spellUpgrade6, #spellUpgrade7, #spellUpgrade8
+{
+    cursor: pointer;
+}
+
+.tooltip-inner {
+    font-size: 14px;
+    border: 2px solid #80191E;
+    margin-left: 5px;
+}
+
+.tooltip.right .tooltip-arrow {
+    color: #80191E;
+}
+
+#roundInfo {
+    display: inline-block;
+}
+
+.font_cGothic {
+    color: #BFB2B2;
+}
+
+#tableSpells {
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+}
+#tableSpells > tbody > tr > td:nth-child(1), #tableSpells > tbody > tr > td:nth-child(3) {
+    text-align: center;
+    font-size: 25px;
+}
+
+#tableSpells td:nth-child(1):hover, #tableSpells td:nth-child(3):hover {
+    background-color: white;
+    opacity: .2;
+}
+
+#game_monster {
+    margin-top: 10vh;
+}
+
+#hero_eq-inv {
+    margin-top: -10vh;
+}
+
+#btn_options {
+    margin-left: 50px;
+}
+#healthSlider > .ui-slider-range {
+    background: red;
+}
+#healthSlider > .ui-slider-handle 
+{ 
+    display:none; 
+}
+#gameMonsterHealth, #gameMonsterName
+{
+    text-align: center;
+}
+#timeSlider > .ui-slider-handle 
+{
+    display: none;
+}
+#timeSlider
+{
+    display: none;
+    margin-top: 15px;
+    background: #80191E;
+}
+.itemTableCell
+{
+    width:32px;
+    height:32px;
+}
+
+#tableContainer {
+    float: left;
+    margin-top: -3%;
+}
+
+#tableContainer td:hover
+{
+    background-color: white;
+    opacity: .6;
+}
+
+#itemDetailsContainer {
+    /*    border-left: 1px solid white;*/
+    margin: 2.5% 0 0 20px;
+}
+
+#itemDetailsContainer p {
+    -webkit-margin-before: .1em !important;
+    -webkit-margin-after: .1em !important;
+
+    color: #BFB2B2;
+}
+
+.active_item {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.btnItemSwitch, .btnItemDelete {
+    margin-top: 15px;
+}
+
+.btnItemDelete {
+    margin-left: 10px;
+}
+
+.glyphicon-record {
+    font-size: 14px !important;
+}
+
+#tableSpells {
+    color: #C7C7C7;
+}
+
+#btnReawaken {
+    display: none;
+}
+.rarityBorder1
+{
+    background-color: transparent;
+}
+
+.rarityBorder2, .rarityBorder3, .rarityBorder4, .rarityBorder5 {
+    opacity: .8;
+}
+
+/* magic - blue */
+.rarityBorder2
+{
+    background-color: #3B6DBB;
+
+}
+/* rare - yellow */
+.rarityBorder3
+{
+    background-color: #FFE119;
+}
+/* epic - purple */
+.rarityBorder4
+{
+    background-color: #A002F1;
+}
+/* legendary - orange */
+.rarityBorder5
+{
+    background-color: #FF963F;
+}

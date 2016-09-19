@@ -1,0 +1,70 @@
+body {
+    background-image: url(../image/new_bg.png);
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+/*#loginForm, #registerForm{
+    display: block;
+    text-align: center;
+}*/
+
+#loginDiv > div, #registerDiv > div {
+    display: block;
+    text-align: center;
+}
+
+#btn_register {
+    margin-top: 10px;
+}
+
+#registerDiv {
+    display: none;
+}
+.thumbnail {
+    background-color: #515151;
+}
+
+.txt_login {
+    text-align: center;
+    /*margin-top: 20px;*/
+}
+
+.txt_password {
+    text-align: center;
+    /*margin: 20px;*/
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.txt_email, .txt_user, .txt_pw, .txt_repw {
+    text-align: center;
+    margin-top: -20px;
+}
+
+#btn_submitRegister {
+    margin-top: 20px;
+}
+
+#btn_backLogin {
+    margin-top: 10px;
+}
+
+#login_container {
+    margin-top: 30%;
+}
+
+#registerForm > fieldset > div.g-recaptcha {
+    margin: 0 auto;
+    width: 304px;
+}
+
+.error {
+    color: #FF9A9A;
+}
+
+.rc-anchor-normal {
+    width: 227px;
+}

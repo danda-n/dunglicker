@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>Dunglicker</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- jQuery UI -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <!-- Custom css -->
+        <link rel="stylesheet" href="css/index.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="login_container" class="col-md-4 col-centered">
+                <div id="loginDiv" class="thumbnail">
+                    <div class="caption">
+                        <form id="loginForm" method="post" action="backend/login.php" autocomplete="off">
+                            <fieldset>
+                                <p>
+                                    <label for="loginUsername"></label>
+                                    <input class="txt_login form-control" type="text" name="loginUsername" id="loginUsername" placeholder="Username">
+                                </p>
+                                <p>
+                                    <label for="loginPassword"></label>
+                                    <input class="txt_password form-control" type="password" name="loginPassword" id="loginPassword" placeholder="Password">
+                                </p>
+                                <input class="submit btn btn-block btn-success" type="submit" value="Submit">
+                            </fieldset>
+                        </form>
+                        <input id="btn_register" class="submit btn btn-block btn-danger" type="submit" value="Register">
+                    </div>
+                </div>
+                <div id="registerDiv" class="thumbnail">
+                    <div class="caption">
+                        <form id="registerForm" method="post" action="backend/register.php" autocomplete="off">
+                            <fieldset>
+                                <p>
+                                    <label for="registerEmail"></label>
+                                    <input class="txt_email form-control" type="email" name="registerEmail" id="registerEmail" placeholder="E-mail address">
+                                </p>
+                                <p>
+                                    <label for="registerUsername"></label>
+                                    <input class="txt_user form-control" type="text" name="registerUsername" id="registerUsername" placeholder="Username">
+                                </p>
+                                <p>
+                                    <label for="registerPassword"></label>
+                                    <input class="txt_pw form-control" type="password" name="registerPassword" id="registerPassword" placeholder="Password">
+                                </p>
+                                <p>
+                                    <label for="registerConfirmPassword"></label>
+                                    <input class="txt_repw form-control" type="password" name="registerConfirmPassword" id="registerConfirmPassword" placeholder="Confirm password">
+                                </p>
+                                <div class="g-recaptcha col-centered" data-sitekey="6LcCmyETAAAAAPWwobQPb5hWVpc-l0aKKxFcDaaX"></div>
+                                <input id="btn_submitRegister" class="submit btn btn-block btn-danger" type="submit" value="Submit">
+                            </fieldset>
+                        </form>
+                        <input id="btn_backLogin" class="submit btn btn-block btn-info" type="submit" value="Back">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/loginController.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
